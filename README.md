@@ -67,6 +67,11 @@ The dataset provided for this competition includes the following columns:
   - Hazardous: 3
 
 ## Exploratory Data Analysis (EDA)
+- **Feature Distributions:**  Histograms and density plots for each feature segmented by air quality level.
+- For example: 
+![Distribution of Population_Density by Air Quality](https://github.com/user-attachments/assets/85302e7a-721d-46a8-9c47-8fd96b7fe9c3)
+- **Correlation Detection:** Display inter-feature correlations to guide feature selection or engineering.
+- ![unknown](https://github.com/user-attachments/assets/aa63207c-8a17-4854-8ad4-e71158ece414)
 
 ## Modeling Approach 
 - **Model Selection:** For this competition, several classifiers were explored:
@@ -84,7 +89,10 @@ Bayesian optimization (using libraries like Optuna) was used to fine-tune the hy
 
 Accuracy: validation set accuracies: **0.9583**.
 
-Confusion Matrix: Visualize misclassifications.
+Confusion Matrix: 
+
+![True label](https://github.com/user-attachments/assets/9942f940-86c9-4b1b-938b-57789e8b2387)
+
 
 ## How to Run
 
