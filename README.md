@@ -98,17 +98,17 @@ Confusion Matrix:
 
 ## Dependencies
 
-Python 3.x
-Pandas
-NumPy
-scikit-learn
-CatBoost
-Optuna (for hyperparameter tuning)
-Matplotlib
-Seaborn
+-Python 3.x
+-Pandas
+-NumPy
+-scikit-learn
+-CatBoost
+-Optuna
+-Matplotlib
+-Seaborn
 
 ## References
-Kaggle Ecosphere Forecasting Competition
+[Kaggle Ecosphere Forecasting Competition](https://www.kaggle.com/competitions/ecosphere-forecasting/overview)
 
 
 
