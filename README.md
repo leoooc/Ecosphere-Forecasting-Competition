@@ -17,13 +17,11 @@ This repository contains my solution and submission for the [Ecosphere Forecasti
 - [Submission File](#submission-file)
 - [How to Run](#how-to-run)
 - [Dependencies](#dependencies)
-- [Conclusion and Future Work](#conclusion-and-future-work)
-- [Acknowledgements](#acknowledgements)
 - [References](#references)
 
 ---
 
-##Introduction
+## Introduction
 
 Air quality is a critical environmental factor that affects public health and quality of life. This competition aims to build a predictive model to classify air quality into four categories: Good, Moderate, Poor, and Hazardous. This repository documents the entire workflow, from data exploration and preprocessing to model training, evaluation, and final submission.
 
@@ -60,7 +58,7 @@ The dataset provided for this competition includes the following columns:
 
 ## Data Preprocessing
 
-- **Missing Values:** Describe any missing values handling (if applicable).
+- **Missing Values:** No value is missing in the data. 
 - **Scaling:** Features were scaled using the `RobustScaler` to mitigate the impact of outliers.
 - **Encoding:** The target variable "Air Quality" was encoded as:
   - Good: 0
@@ -68,14 +66,41 @@ The dataset provided for this competition includes the following columns:
   - Poor: 2
   - Hazardous: 3
 
-Example code snippet:
-```python
-from sklearn.preprocessing import RobustScaler
+## Exploratory Data Analysis (EDA)
 
-# Map target labels to numbers
-y = train_raw['Air Quality'].map({'Good': 0, 'Moderate': 1, 'Poor': 2, 'Hazardous': 3})
-X = train_raw.drop(columns=['Id', 'Air Quality'])
+## Modeling Approach 
+- **Model Selection:** For this competition, several classifiers were explored:
+- Logistic Regression
+- Decision Trees
+- Random Forests
+- CatBoost (final model)
+- **CatBoost Model:** The final model was built using CatBoostClassifier due to its superior performance on tabular data and ease of handling various feature types.
 
-# Apply scaling
-scaler = RobustScaler()
-X_scaled = scaler.fit_transform(X)
+## Hyperparameter Tuning
+
+Bayesian optimization (using libraries like Optuna) was used to fine-tune the hyperparameters of the CatBoost model. This section documents the search process and the best hyperparameters discovered.
+
+## Results and Evaluation
+
+Accuracy: validation set accuracies: **0.9583**.
+
+Confusion Matrix: Visualize misclassifications.
+
+## How to Run
+
+## Dependencies
+
+Python 3.x
+Pandas
+NumPy
+scikit-learn
+CatBoost
+Optuna (for hyperparameter tuning)
+Matplotlib
+Seaborn
+
+## References
+Kaggle Ecosphere Forecasting Competition
+
+
+
