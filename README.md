@@ -96,6 +96,9 @@ Confusion Matrix:
 
 ## How to Run
 
+git clone https://github.com/yourusername/ecosphere-forecasting.git
+cd ecosphere-forecasting
+
 ## Dependencies
 
 -Python 3.x
