@@ -97,18 +97,21 @@ Confusion Matrix:
 ## How to Run
 
 git clone [https://github.com/yourusername/ecosphere-forecasting.git](https://github.com/leoooc/Ecosphere-Forecasting-Competition.git)
-cd ecosphere-forecasting
+- cd Ecosphere-Forecasting-Competition
+- python -m venv venv
+- source venv/bin/activate
+- pip install -r requirements.txt
 
 ## Dependencies
 
--Python 3.x
--Pandas
--NumPy
--scikit-learn
--CatBoost
--Optuna
--Matplotlib
--Seaborn
+- Python 3.x
+- Pandas
+- NumPy
+- scikit-learn
+- CatBoost
+- Optuna
+- Matplotlib
+- Seaborn
 
 ## References
 [Kaggle Ecosphere Forecasting Competition](https://www.kaggle.com/competitions/ecosphere-forecasting/overview)
