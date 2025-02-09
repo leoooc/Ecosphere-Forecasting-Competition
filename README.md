@@ -96,7 +96,7 @@ Confusion Matrix:
 
 ## How to Run
 
-git clone https://github.com/yourusername/ecosphere-forecasting.git
+git clone [https://github.com/yourusername/ecosphere-forecasting.git](https://github.com/leoooc/Ecosphere-Forecasting-Competition.git)
 cd ecosphere-forecasting
 
 ## Dependencies
