@@ -99,7 +99,8 @@ Confusion Matrix:
 1 git clone https://github.com/leoooc/Ecosphere-Forecasting-Competition.git
   cd Ecosphere-Forecasting-Competition
 ```
-2 Data Setup
+2 **Data Setup**
+
   This project uses data from the Ecosphere Forecasting competition on Kaggle. The data is not included in this repository due to its size and licensing restrictions. To obtain the data, please follow these steps:
 
 a **Download Manually:**  
