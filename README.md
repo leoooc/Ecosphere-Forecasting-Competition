@@ -65,14 +65,14 @@ The dataset provided for this competition includes the following columns:
   - Moderate: 1
   - Poor: 2
   - Hazardous: 3
-
+---
 ## Exploratory Data Analysis (EDA)
 - **Feature Distributions:**  Histograms and density plots for each feature segmented by air quality level.
 - For example: 
 ![Distribution of Population_Density by Air Quality](https://github.com/user-attachments/assets/85302e7a-721d-46a8-9c47-8fd96b7fe9c3)
 - **Correlation Detection:** Display inter-feature correlations to guide feature selection or engineering.
 - ![unknown](https://github.com/user-attachments/assets/aa63207c-8a17-4854-8ad4-e71158ece414)
-
+---
 ## Modeling Approach 
 - **Model Selection:** For this competition, several classifiers were explored:
 - Logistic Regression
@@ -80,11 +80,11 @@ The dataset provided for this competition includes the following columns:
 - Random Forests
 - CatBoost (final model)
 - **CatBoost Model:** The final model was built using CatBoostClassifier due to its superior performance on tabular data and ease of handling various feature types.
-
+---
 ## Hyperparameter Tuning
 
 Bayesian optimization (using libraries like Optuna) was used to fine-tune the hyperparameters of the CatBoost model. This section documents the search process and the best hyperparameters discovered.
-
+---
 ## Results and Evaluation
 
 Accuracy: validation set accuracies: **0.9583**.
@@ -93,17 +93,17 @@ Confusion Matrix:
 
 ![True label](https://github.com/user-attachments/assets/9942f940-86c9-4b1b-938b-57789e8b2387)
 
-
+---
 ## How to Run
-```bash
+```
 git clone https://github.com/leoooc/Ecosphere-Forecasting-Competition.git
 cd Ecosphere-Forecasting-Competition
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 jupyter notebook
-
-
+```
+---
 ## Dependencies
 
 - Python 3.x
@@ -114,6 +114,9 @@ jupyter notebook
 - Optuna
 - Matplotlib
 - Seaborn
+
+
+For the complete list of dependencies and their versions, please refer to the [requirements.txt](requirements.txt) file.
 
 ## References
 [Kaggle Ecosphere Forecasting Competition](https://www.kaggle.com/competitions/ecosphere-forecasting/overview)
