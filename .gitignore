@@ -1,0 +1,33 @@
+# Python bytecode and cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment directories (local Python environments)
+venv/
+env/
+ENV/
+
+# Jupyter Notebook checkpoints (temporary saved versions)
+.ipynb_checkpoints/
+
+# Data directories: large Kaggle datasets should not be stored in the repo
+data/
+input/
+
+# Model artifacts: if your trained models are large, consider using Git LFS or ignore them
+models/
+
+# Log files and temporary files
+*.log
+tmp/
+temp/
+
+# Build directories (if applicable)
+build/
+dist/
+*.egg-info/
+
+# OS specific files
+.DS_Store
+Thumbs.db
