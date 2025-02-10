@@ -95,13 +95,49 @@ Confusion Matrix:
 
 ---
 ## How to Run
+- **Data Setup**
+  This project uses data from the Ecosphere Forecasting competition on Kaggle. The data is not included in this repository due to its size and licensing restrictions. To obtain the data, please follow these steps:
+
+1. **Download Manually:**  
+   - Visit the [Ecosphere Forecasting competition page](https://www.kaggle.com/competitions/ecosphere-forecasting/overview).
+   - Download the required data files.
+   - Place the downloaded files in a folder named `data` in the project root.
+
+   **OR**
+
+2. **Download via Kaggle API:**  
+   - Ensure you have the Kaggle API installed and configured with your credentials.
+   - Run the following command from the project root:
+     ```bash
+     kaggle competitions download -c ecosphere-forecasting -p data
+     ```
+   - Extract the downloaded files (if they are compressed) so that the data files are available under the `data` folder
+
 ```
-git clone https://github.com/leoooc/Ecosphere-Forecasting-Competition.git
-cd Ecosphere-Forecasting-Competition
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-jupyter notebook
+1 git clone https://github.com/leoooc/Ecosphere-Forecasting-Competition.git
+  cd Ecosphere-Forecasting-Competition
+2 Data Setup
+  This project uses data from the Ecosphere Forecasting competition on Kaggle. The data is not included in this repository due to its size and licensing restrictions. To obtain the data, please follow these steps:
+
+a **Download Manually:**  
+   - Visit the [Ecosphere Forecasting competition page](https://www.kaggle.com/competitions/ecosphere-forecasting/overview).
+   - Download the required data files.
+   - Place the downloaded files in a folder named `data` in the project root.
+
+   **OR**
+
+b **Download via Kaggle API:**  
+   - Ensure you have the Kaggle API installed and configured with your credentials.
+   - Run the following command from the project root:
+     ```bash
+     kaggle competitions download -c ecosphere-forecasting -p data
+     ```
+   - Extract the downloaded files (if they are compressed) so that the data files are available under the `data` folder
+
+3 python -m venv venv
+  source venv/bin/activate
+4 pip install -r requirements.txt
+5 jupyter notebook
 ```
 ---
 ## Dependencies
