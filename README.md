@@ -98,6 +98,7 @@ Confusion Matrix:
 ```
 1 git clone https://github.com/leoooc/Ecosphere-Forecasting-Competition.git
   cd Ecosphere-Forecasting-Competition
+```
 2 Data Setup
   This project uses data from the Ecosphere Forecasting competition on Kaggle. The data is not included in this repository due to its size and licensing restrictions. To obtain the data, please follow these steps:
 
@@ -115,7 +116,7 @@ b **Download via Kaggle API:**
      kaggle competitions download -c ecosphere-forecasting -p data
      ```
    - Extract the downloaded files (if they are compressed) so that the data files are available under the `data` folder
-
+```
 3 python -m venv venv
   source venv/bin/activate
 4 pip install -r requirements.txt
