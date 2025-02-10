@@ -95,12 +95,14 @@ Confusion Matrix:
 
 
 ## How to Run
+```bash
+   git clone https://github.com/leoooc/Ecosphere-Forecasting-Competition.git
+   cd Ecosphere-Forecasting-Competition
+   python -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   jupyter notebook
 
-git clone [https://github.com/yourusername/ecosphere-forecasting.git](https://github.com/leoooc/Ecosphere-Forecasting-Competition.git)
-- cd Ecosphere-Forecasting-Competition
-- python -m venv venv
-- source venv/bin/activate
-- pip install -r requirements.txt
 
 ## Dependencies
 
