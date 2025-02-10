@@ -82,8 +82,8 @@ The dataset provided for this competition includes the following columns:
 - **CatBoost Model:** The final model was built using CatBoostClassifier due to its superior performance on tabular data and ease of handling various feature types.
 ---
 ## Hyperparameter Tuning
+Bayesian optimization (using libraries like Optuna) was used to fine-tune the hyperparameters of the CatBoost model.
 
-Bayesian optimization (using libraries like Optuna) was used to fine-tune the hyperparameters of the CatBoost model. This section documents the search process and the best hyperparameters discovered.
 ---
 ## Results and Evaluation
 
